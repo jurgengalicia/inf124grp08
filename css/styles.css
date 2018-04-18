@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #E9EDEC;
+  margin: 0px 0px 0px 0px;
+}
+
+#top-navigation-header {
+  display: flex;
+  align-items: center;
+  height: 6vh;
+  background: #F9E48B;
+}
+
+#top-nav-header-list {
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0;
+}
+
+#top-nav-header-list a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Helvetica', 'Arial';
+  font-weight: 900;
+  padding: .5em 1em .5em 1em;
+  width: 10vw;
+  height: auto;
+}
+
+#top-nav-header-list a:hover {
+  background: #F9E437;
+}
+
+.nav-dropdown {
+  width: 20vh;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background: #F9E48B;
+  z-index: 1;
+}
+
+.item-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  background: #EBEFEE;
+}
+
+.merchandise-list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.merchandise-list li {
+  color: white;
+  font-family: 'Helvetica', 'Arial';
+  font-weight: 800;
+  padding: 1em;
+}
+
+.merchandise {
+  height: 40vh;
+  width: 40vh;
+  background: rgba(65, 138, 182, .5);
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.merchandise:hover {
+  background: rgba(65, 138, 182, .9);
+}
+
+/*
+EBEFEE - White
+418AB6 - Blue
+F97B64 - Red
+F9E48B - Yellow
+E9EDEC - Grey
+*/
