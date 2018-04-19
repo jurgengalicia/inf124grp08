@@ -6,6 +6,27 @@
     <title>
       Group 8 Icecream
     </title>
+    <style>
+		.zoom {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
+     -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	}
+		.zoom:hover {
+    position: relative;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 1000;
+	}
+	</style>
     <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32" />
     <link rel="stylesheet" href="css/styles.css">
   <head/>
@@ -35,7 +56,7 @@
             <td>
               <a href="merchandise.html?name=Spicy mango&price=10" class="button-segment">
                 <div class="merchandise">
-                  <img src="./img/Spicy mango.jpg" class="merchandise-image" />
+                  <img class="zoom" src="./img/Spicy mango.jpg" class="merchandise-image" />
                   Spicy Mango Popsicle
                 </div>
               </a>
@@ -43,7 +64,7 @@
             <td>
               <a href="merchandise.html?name=Melonsickle&price=10" class="button-segment">
                 <div class="merchandise">
-                  <img src="./img/Melonsickle.jpg" class="merchandise-image" />
+                  <img class="zoom" src="./img/Melonsickle.jpg" class="merchandise-image" />
                   Melonsickle
                 </div>
               </a>
@@ -53,7 +74,7 @@
             <td>
               <a href="merchandise.html?name=Watermelon Popsicle&price=12" class="button-segment">
                 <div class="merchandise">
-                  <img src="./img/Watermelon Popsicle.jpg" class="merchandise-image" />
+                  <img class="zoom" src="./img/Watermelon Popsicle.jpg" class="merchandise-image" />
                   Watermelon Popsicle
                 </div>
               </a>
@@ -61,7 +82,7 @@
             <td>
               <a href="merchandise.html?name=Banana Chocolate&price=12" class="button-segment">
                 <div class="merchandise">
-                  <img src="./img/Banana Chocolate.jpg" class="merchandise-image" />
+                  <img class="zoom" src="./img/Banana Chocolate.jpg" class="merchandise-image" />
                   Banana Chocolate Popsicle
                 </div>
               </a>
