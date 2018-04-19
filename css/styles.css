@@ -12,10 +12,13 @@ html, body {
 }
 
 #top-navigation-header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
-  height: 6vh;
-  background: #F9E48B;
+  width: 100vw;
+  background: #F9E437;
 }
 
 #top-nav-header-list {
@@ -28,22 +31,20 @@ html, body {
   margin: 0;
 }
 
-#top-nav-header-list a {
+#top-nav-header-list li a {
+  display: inline-block;
   text-decoration: none;
+  text-align: center;
   color: white;
   font-family: 'Helvetica', 'Arial';
   font-weight: 900;
-  padding: .5em 1em .5em 1em;
+  padding: 1em 1em 1em 1em;
   width: 10vw;
   height: auto;
 }
 
-#top-nav-header-list a:hover {
-  background: #F9E437;
-}
-
-.nav-dropdown {
-  width: 20vh;
+#top-nav-header-list li a:hover {
+  background: #F9E48B;
 }
 
 .nav-dropdown:hover .nav-dropdown-content {
@@ -54,15 +55,18 @@ html, body {
 .nav-dropdown-content {
   display: none;
   position: absolute;
-  background: #F9E48B;
+  background: #F9E437;
   z-index: 1;
 }
 
 .item-gallery {
+  position: relative;
+  top: 6vh;
   display: flex;
   flex-flow: row wrap;
   height: 100vh;
   background: #EBEFEE;
+  padding: 1em;
 }
 
 .merchandise-list {
@@ -81,6 +85,10 @@ html, body {
 }
 
 .merchandise {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
   height: 40vh;
   width: 40vh;
   background: rgba(65, 138, 182, .5);
@@ -88,8 +96,44 @@ html, body {
   border-radius: 0.5em;
 }
 
+.merchandise-image {
+  height: 80%;
+  width: 80%;
+}
+
 .merchandise:hover {
   background: rgba(65, 138, 182, .9);
+}
+
+.merchandise-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#merchandise-content {
+  display: flex;
+}
+
+.merchandise-focused {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Helvetica', 'Arial';
+  font-weight: 800;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 1em;
+  background: #F97B64;
+  color: white;
+}
+
+.button-segment {
+  text-decoration: none;
+  color: white;
+  font-family: 'Helvetica', 'Arial';
 }
 
 /*
