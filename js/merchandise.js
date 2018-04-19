@@ -13,18 +13,55 @@ window.onload = function() {
   var price = getParameterByName("price");
   document.getElementById("merchandise-content").innerHTML =
   `
-    <div class="merchandise-focused">
-      <div class="merchandise-images">
-        <img src="./img/${name}.jpg" height="100%" width="100%"/>
-      </div>
-      <div class="merchandise-info">
-        <div class="merchanise-name">
-          ${name}
+    <div>
+      <div class="merchandise-focused">
+        <div class="merchandise-info">
+          <div class="merchanise-name">
+            ${name}
+          </div>
+          <div class="merchanise-price">
+            $${price}
+          </div>
         </div>
-        <div class="merchanise-price">
-          $${price}
+      </div>
+      <div class="merchandise-focused blue">
+        <div class="merchandise-info">
+          <div class="merchanise-name">
+            ${name}
+          </div>
+          <div class="merchanise-price">
+            $${price}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="merchandise-focused blue">
+        <div class="merchandise-info">
+          <div class="merchanise-name">
+            ${name}
+          </div>
+          <div class="merchanise-price">
+            $${price}
+          </div>
+        </div>
+      </div>
+      <div class="merchandise-focused">
+        <div class="merchandise-info">
+          <div class="merchanise-name">
+            ${name}
+          </div>
+          <div class="merchanise-price">
+            $${price}
+          </div>
         </div>
       </div>
     </div>
   `;
+  document.getElementById("merchandise-media").innerHTML =
+  `
+  <div class="merchandise-images">
+    <img src="./img/${name}.jpg" height="100%" width="100%"/>
+  </div>
+  `
 }
