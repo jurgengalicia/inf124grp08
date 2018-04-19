@@ -1,6 +1,7 @@
 html {
   margin: 0;
   height: 100vh;
+  font-family: 'Helvetica', 'Arial';
 }
 
 body {
@@ -62,6 +63,63 @@ body {
   position: absolute;
   background: #F9E437;
   z-index: 1;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 7vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+.display-container {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.three-panel-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+}
+
+.information-panel {
+  height: 30vh;
+  border-top-left-radius: 0.75em;
+  border-top-right-radius: 0.75em;
+}
+
+.information-panel-header {
+  width: 100%;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background: white;
+  color: black;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.information-panel-content {
+  height: 80%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 .item-gallery {
@@ -151,6 +209,26 @@ body {
 
 .blue {
   background: #418AB6;
+}
+
+.yellow {
+  background: #F9E48B;
+}
+
+.red {
+  background: #F97B64;
+}
+
+.grey {
+  background: #E9EDEC;
+}
+
+.mint {
+  background: #B7FFCB;
+}
+
+.third {
+  width: 28vw;
 }
 
 /*
