@@ -12,19 +12,19 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   background: #E9EDEC;
   margin: 0px 0px 0px 0px;
 }
 
 #top-navigation-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 2;
   display: flex;
   align-items: center;
-  width: 100vw;
-  background: #F9E437;
+  width: 100%;
+  background: #A8EBBB;
 }
 
 #top-nav-header-list {
@@ -50,7 +50,7 @@ body {
 }
 
 #top-nav-header-list li a:hover {
-  background: #F9E48B;
+  background: #B7FFCB;
 }
 
 .nav-dropdown:hover .nav-dropdown-content {
@@ -61,7 +61,7 @@ body {
 .nav-dropdown-content {
   display: none;
   position: absolute;
-  background: #F9E437;
+  background: #A8EBBB;
   z-index: 1;
 }
 
@@ -149,7 +149,7 @@ body {
 
 .merchandise {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
   height: 40vh;
@@ -170,21 +170,27 @@ body {
 }
 
 .merchandise-container {
+  position: relative;
+  top: 8.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: #E9EDEC;
 }
 
 #merchandise-content {
   display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-content: center;
   height: 100vh;
-  width: 60vw;
+  width: 50vw;
 }
 
 #merchandise-media {
   height: 100vh;
-  width: 40vw;
+  width: 50vw;
 }
 
 .merchandise-focused {
@@ -199,6 +205,12 @@ body {
   border-radius: 1em;
   background: #F97B64;
   color: white;
+}
+
+.checkout-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
 .button-segment {
@@ -218,7 +230,7 @@ body {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 	}
-	
+
 .zoom:hover {
     position: relative;
     -webkit-transform: scale(1.2);
