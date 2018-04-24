@@ -18,7 +18,7 @@ body {
 }
 
 #top-navigation-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 2;
   display: flex;
@@ -170,8 +170,6 @@ body {
 }
 
 .merchandise-container {
-  position: relative;
-  top: 8.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,9 +206,11 @@ body {
 }
 
 .checkout-container {
+  margin-top: 3em;
   height: 100vh;
   width: 100vw;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .button-segment {
@@ -239,6 +239,10 @@ body {
     transform: scale(1.2);
     z-index: 1000;
 	}
+
+.push {
+  margin-bottom: 10vh;
+}
 
 input[type="tel"] {
   -webkit-appearance: none;
@@ -276,7 +280,9 @@ body {
 }
 
 form {
-  max-width: 200px;
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
 }
 
 p * {
@@ -318,12 +324,21 @@ input:focus:invalid {
   padding: 0.3em;
 }
 
+.form-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-
-
-
-
-
+input[type=text], input[type=email], input[type="card"], input[type="number"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 .blue {
   background: #418AB6;

@@ -30,6 +30,7 @@
           </li>
         </ul>
       </div>
+      <div class="push"></div>
       <div class="merchandise-container">
         <div id="merchandise-content">
         </div>
@@ -38,10 +39,99 @@
       </div>
       <div class="checkout-container">
         <form>
-          <input type="text" name="firstname" placeholder="First name:" />
-          <input type="text" name="lastname" placeholder="Last name:"  />
-          <input type="text" name="address" placeholder="Address" />
-        </form>
+          <div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Product Name:
+              </div>
+              <select>
+          		  <option value="ssstrawberry">Strawberry</option>
+          		  <option value="sschocolate">Chocolate</option>
+          		  <option value="ssvanilla">Vanilla</option>
+          		  <option value="ssmint">Mint</option>
+          		  <option value="ssrocky">Rocky Road</option>
+          		  <option value="ssgreen">Green Tea</option>
+          		  <option value="ssorange">Orange Creamsicle</option>
+          		  <option value="sspecan">Butter Pecan</option>
+          		  <option value="popmango">Spicy Mango</option>
+          		  <option value="popmelon">Melonsicle</option>
+          		  <option value="popwater">Watermelon Popsicle</option>
+          		  <option value="popbanana">Banana Chocolate</option>
+          		  <option value="icematcha">Matcha Shaved Ice</option>
+          		  <option value="icestrawberry">Strawberry Shaved Ice</option>
+          		  <option value="icemango">Mango Shaved Ice</option>
+          		  <option value="icesesame">Black Sesame Shaved Ice</option>
+          		</select>
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Quantity
+              </div>
+              <input type="number" name="Quantity" value="1">
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                First name:
+              </div>
+              <input type="text" name="FirstName" value="" placeholder="Ben">
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Last name:
+              </div>
+              <input type="text" name="LastName" value="" placeholder="Jerrys">
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Email Address:
+              </div>
+              <input type="email" name="EmailAddress" value="" placeholder="benjerrys@icecream.com">
+            </div>
+          </div>
+          <div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Phone Number:
+              </div>
+              <input type="text" pattern="^\d{3}-\d{3}-\d{4}$" required name="PhoneNumber" value="" placeholder="XXX-XXXX-XXXX">
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Shipping Address:
+              </div>
+              <input type="text" name="ShippingAddress" value="" placeholder="1234 Salty Springs">
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Shipping Method:
+              </div>
+              <select>
+          		  <option value="Overnight">Overnight</option>
+          		  <option value="2Days">2-Days expidited</option>
+          		  <option value="6Days">6-Days ground</option>
+          		</select>
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Credit Card Type:
+              </div>
+              <select>
+          		  <option value="Visa">Visa</option>
+          		  <option value="MC">Master Card</option>
+          		  <option value="AmEx">American Express</option>
+          		</select>
+            </div>
+            <div class="form-info">
+              <div class="form-info-name">
+                Credit Card Number:
+              </div>
+              <input type="card" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" required name="Card" value="" placeholder="XXXX-XXXX-XXXX-XXXX">
+            </div>
+            <div class="form-button">
+              <input type="submit" type="card" value="Submit">
+            </div>
+          </div>
+      	</form>
       </div>
     </div>
   </body>
