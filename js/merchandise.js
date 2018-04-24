@@ -91,6 +91,43 @@ function getParameterByName(name, url) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
+function validateForm() {
+  if (document.forms["productForm"]["FirstName"].value === "") {
+    alert("First Name must be filled");
+    return false;
+  }
+  else if (document.forms["productForm"]["LastName"].value === "") {
+    alert("Last Name must be filled");
+    return false;
+  }
+  else if (document.forms["productForm"]["EmailAddress"].value === "") {
+    alert("Email Address must be filled");
+    return false;
+  }
+  else if (document.forms["productForm"]["ShippingAddress"].value === "") {
+    alert("Shipping Address must be filled");
+    return false;
+  }
+  return true;
+}
+
+function sendEmailOnPurchase() {
+  if (validateForm()) {
+    emailData = {
+      "email": document.forms["productForm"]["EmailAddress"].value,
+      "body": {
+        "product": document.getElementById("product-select-type").value,
+        "quantity": document.forms["productForm"]["Quantity"].value
+      }
+    }
+    window.location.href = `mailto:${emailData.email}?subject=Purchase From Mint To Be&body=${emailData.body}`;
+  }
+  else {
+    return false;
+  }
+
+}
+
 window.onload = function() {
   var name = getParameterByName("name");
   var price = getParameterByName("price");

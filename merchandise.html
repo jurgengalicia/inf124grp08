@@ -38,13 +38,13 @@
         </div>
       </div>
       <div class="checkout-container">
-        <form>
+        <form name="productForm" onsubmit="return sendEmailOnPurchase()">
           <div>
             <div class="form-info">
               <div class="form-info-name">
                 Product Name:
               </div>
-              <select>
+              <select id="product-type-select">
           		  <option value="ssstrawberry">Strawberry</option>
           		  <option value="sschocolate">Chocolate</option>
           		  <option value="ssvanilla">Vanilla</option>
