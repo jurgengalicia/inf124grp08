@@ -145,14 +145,15 @@ function validateForm() {
 
 function sendEmailOnPurchase() {
   if (validateForm()) {
-    emailData = {
+    var emailData = {
       "email": document.forms["productForm"]["EmailAddress"].value,
       "body": {
-        "product": document.getElementById("product-select-type").value,
+        "product": document.getElementById("product-type-select").value,
         "quantity": document.forms["productForm"]["Quantity"].value
       }
     }
-    window.location.href = `mailto:${emailData.email}?subject=Purchase From Mint To Be&body=${emailData.body}`;
+    window.open(`mailto:purchase@minttobe.com?subject=Purchase From Mint To Be&body=You have bought ${emailData.body.quantity} ${emailData.body.product}`);
+    return false;
   }
   else {
     return false;
