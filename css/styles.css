@@ -149,7 +149,7 @@ body {
 
 .merchandise {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   align-items: center;
   justify-content: space-around;
   height: 40vh;
