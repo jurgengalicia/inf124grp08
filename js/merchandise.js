@@ -152,7 +152,7 @@ function sendEmailOnPurchase() {
         "quantity": document.forms["productForm"]["Quantity"].value
       }
     }
-    window.open(`mailto:purchase@minttobe.com?subject=Purchase From Mint To Be&body=You have bought ${emailData.body.quantity} ${emailData.body.product}`);
+    window.location.href = `mailto:purchase@minttobe.com?subject=Purchase From Mint To Be&body=You have bought ${emailData.body.quantity} ${emailData.body.product}`;
     return false;
   }
   else {
