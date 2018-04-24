@@ -16,7 +16,7 @@ const data = {
   },
   "Mint": {
     "price": "10.00",
-    "ingredients": "Mint oil, cream, vanilla, sugar, chocolate chips",
+    "ingredients": "Mint extract, cream, vanilla, sugar, chocolate chips",
     "description": "Our house signature; cool, refreshing, and packed with chocolate chips"
   },
   "Rocky Road": {
@@ -66,12 +66,12 @@ const data = {
   },
   "Strawberry Shaved Ice": {
     "price": "11.00",
-    "ingredients": "Ice, mango, whole milk, heavy cream, sugar",
+    "ingredients": "Ice, Strawberry, whole milk, heavy cream, sugar",
     "description": "Made with freshly picked strawberries from a local farm topped with more strawberries!"
   },
   "Mango Shaved Ice": {
     "price": "11.00",
-    "ingredients": "Ice, strawberry, whole milk, heavy cream, honey syrup",
+    "ingredients": "Ice, Mango, whole milk, heavy cream, honey syrup",
     "description": "Shaved ice made from a tropical delight, packed with healthy sugars and vitamin C"
   },
   "Black Sesame Shaved Ice": {
