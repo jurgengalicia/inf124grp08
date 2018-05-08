@@ -35,7 +35,7 @@ require_once "pdo.php";
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-              echo('<tr><td><a><div class="merchandise">');
+              echo('<tr><td><a href="merchandise.php?id='.$row['id'].'"><div class="merchandise">');
               echo('<img class="zoom" src="'.$row["image"].'" class="merchandise-image" />');
               echo('<div class="merchandise-info">'.$row["name"].'</div>');
               echo('<div class="merchandise-price">'.$row["price"].'</div>');
