@@ -31,13 +31,18 @@ require_once "pdo.php";
       <div class="item-gallery">
         <table class="merchandise-list">
           <?php
-          $stmt = $pdo->prepare("SELECT * FROM merchandise WHERE category = shaved_ice");
-          while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+          $sql = "SELECT * FROM merchandise WHERE category = 'shaved_ice'";
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
               echo('<tr><td><a><div class="merchandise">');
-              echo('<img class="zoom" src="./img/'$row['name']'" class="merchandise-image" />')
-              echo('<div class="merchandise-info">'.$row['name'].'</div>')
-              echo('<div class="merchandise-price">'$row['price']'</div>')
-              echo("</div></a></td></tr>\n")
+              echo('<img class="zoom" src="'.$row["image"].'" class="merchandise-image" />');
+              echo('<div class="merchandise-info">'.$row["name"].'</div>');
+              echo('<div class="merchandise-price">'.$row["price"].'</div>');
+              echo("</div></a></td></tr>");
+            }
+          } else {
+            echo "No matching results found.";
           }
           ?>
         </table>
