@@ -31,7 +31,7 @@ require_once "pdo.php";
       <div class="item-gallery">
         <table class="merchandise-list">
           <?php
-          $stmt = $pdo->prepare("SELECT * FROM merchandise WHERE category = soft_serve");
+          $stmt = $pdo->prepare("SELECT * FROM merchandise WHERE category = shaved_ice");
           while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
               echo('<tr><td><a><div class="merchandise">');
               echo('<img class="zoom" src="./img/'$row['name']'" class="merchandise-image" />')
