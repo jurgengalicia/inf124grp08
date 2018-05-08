@@ -34,10 +34,32 @@
       <div class="push"></div>
       <div class="merchandise-container">
         <div id="merchandise-content">
+          <?php
+            $sql = "SELECT image FROM merchandise WHERE id = '$id'";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              while ($row = $result->fetch_assoc()) {
+                echo '<div class="merchandise-focused"><div class="merchandise-info">';
+                echo '<div class="merchanise-name">'.$row["name"]'</div>';
+                echo '<div class="merchanise-price">$'.$row["price"].'</div>';
+                echo '</div></div>';
+                echo '<div class="merchandise-focused blue">';
+                echo '<div class="merchandise-info">'.$row["description"].'</div></div>';
+                echo '<div class="merchandise-focused yellow"><div class="merchandise-info">';
+                echo '<div class="merchanise-name">Ingredients:</div>';
+                echo '<div class="merchanise-name">${data[name].ingredients}</div>';
+                echo '</div></div>';
+                echo '<div class="merchandise-focused mint"><div class="merchandise-info">';
+                echo '<div class="merchandise-name">Rating:</div>';
+                echo '<div class="merchandise-name">A</div>';
+                echo '<div class="merchandise-name">B</div>';
+                echo '</div></div>';
+              }
+            } else {
+              echo "No matching results found.";
+            }
+          ?>
         </div>
-        <?php
-
-        ?>
         <div id="merchandise-media">
           <?php
           $sql = "SELECT image FROM merchandise WHERE id = '$id'";
