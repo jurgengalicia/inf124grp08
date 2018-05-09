@@ -149,13 +149,13 @@
               <div class="form-info-name">
                 City:
               </div>
-              <input type="text" required name="City" value="" placeholder="Salty Springs">
+              <input type="text" id="City" required name="City" value="" placeholder="Salty Springs">
             </div>
             <div class="form-info">
               <div class="form-info-name">
                 State:
               </div>
-              <input type="text" required pattern="^[A-Z]{2}$" name="City" value="" placeholder="FN">
+              <input type="text" id="State" required pattern="^[A-Z]{2}$" name="State" value="" placeholder="FN">
             </div>
             <div class="form-info">
               <div class="form-info-name">
