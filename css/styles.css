@@ -244,6 +244,35 @@ body {
   margin-bottom: 10vh;
 }
 
+.confirmation-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#confirmation-content {
+  height: 70vh;
+  width: 50vw;
+  background: white;
+  text-align: center;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+#confirmation-user {
+  height: 30%;
+  width: 100%;
+}
+
+#confirmation-shipping {
+  height: 60%;
+  width: 100%;
+}
+
 input[type="tel"] {
   -webkit-appearance: none;
   width: 80%;
