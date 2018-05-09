@@ -111,13 +111,13 @@
               <div class="form-info-name">
                 First name:
               </div>
-              <input type="text" name="FirstName" value="" placeholder="Ben">
+              <input type="text" required name="FirstName" value="" placeholder="Ben">
             </div>
             <div class="form-info">
               <div class="form-info-name">
                 Last name:
               </div>
-              <input type="text" name="LastName" value="" placeholder="Jerrys">
+              <input type="text" required name="LastName" value="" placeholder="Jerrys">
             </div>
             <div class="form-info">
               <div class="form-info-name">

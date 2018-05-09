@@ -1,23 +1,22 @@
-Assignment 1
+Assignment 2
 inf124grp08
 Website project developed by(group 8):
 Jurgen Galicia & Khuong Tiet
 
-Website URL: http://centaurus-8.ics.uci.edu:1170/index.html
+Website URL: http://centaurus-8.ics.uci.edu:1171/index.html
 
-index.html is the homepage of the website. This page satisfies requirement #1
+index.html is the homepage of the website.
 
-Three pages: soft_serve.html, shaved_ice.html and popsicle.html satisfies
-requirements #2, 3, 4 and 5. clicking on any image leads to the next webpage.
+several pages: merchandise.php, pdo.php shaved_ice.php, soft_serve.php, popsicle.php
+satisfies requirement #1. product information is pulled from our group database
 
-The merchandise page, merchandise.html, satisfies requirements #5, 6, 7 and 8.
-the detailed description of a chosen item and the order sheet is found in this
-page(scroll down for the order sheet).
+merchandise.php, confirmation.html, confirmation.php, order_validate.php and insert_order.php
+satisfy requirement #2. order details are validated and are inserted into the "order" table.
 
-in a folder named css resides a styles.css file, which contains several
-styles used throughout the website. this css file satisfies requirement #9
+confirmation.html, confirmation.php satisfy requirement #3
+the confirmation page is displayed for the user if the order request
+was successful.
 
-requirement #10 is satisfied in the three pages soft_serve.html, shaved_ice.html and popsicle.html
-where images hovered over are enlarged.
-
-
+getCityState.php, merchandise.php, csv/zip_codes.csv and js/merchandise.js 
+satisfy requirement #4 the fields City and State are autofilled in merchandise.php
+if a zip code that csv/zip_codes.csv stores is typed into the field Zip Code
